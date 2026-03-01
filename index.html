@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mjsat - Links & Gaming</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        denoBg: '#000000',
+                        denoCard: '#111111',
+                        denoBorder: '#333333',
+                        denoText: '#f3f4f6',
+                        denoMuted: '#9ca3af',
+                        denoHover: '#1f1f1f',
+                    },
+                    fontFamily: {
+                        sans: ['system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'sans-serif'],
+                        mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles just for the fade-out animation */
+        #loader {
+            transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
+        }
+        .fade-out {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-denoBg text-denoText font-sans min-h-screen flex justify-center py-16 px-6 box-border m-0">
+
+    <div id="loader" class="fixed inset-0 z-50 bg-denoBg flex flex-col items-center justify-center">
+        <img src="https://yt3.googleusercontent.com/B4WHn-bX86E9p9e3o6CduFqOjUlkwVniLPBxEXaE9qEwpMXy-rFZ5yYrIvVDHVBrhoyKQgBZXw=s160-c-k-c0x00ffffff-no-rj" alt="Mjsat Profile" class="w-32 h-32 rounded-full mb-6 shadow-lg animate-pulse object-cover">
+        <h1 class="text-4xl font-bold tracking-tight text-white animate-pulse">Mjsat</h1>
+    </div>
+
+    <div class="max-w-[720px] w-full flex flex-col gap-10">
+        <header class="text-left mb-2">
+            <h1 class="text-5xl font-bold m-0 tracking-tight">Mjsat</h1>
+            <p class="text-denoMuted text-xl mt-3 font-medium">Minecraft & Roblox Rivals Influencer</p>
+            <p class="text-gray-300 text-base mt-4 leading-relaxed max-w-2xl border-l-2 border-purple-500 pl-4">
+               Roblox Rivals and Minecraft Content. 
+            </p>
+        </header>
+
+        <section class="bg-denoCard border border-denoBorder rounded-2xl p-8 shadow-xl">
+            <h2 class="text-xl mt-0 mb-5 font-semibold text-denoMuted uppercase tracking-wider">Social Media</h2>
+            <div class="flex flex-col gap-4">
+                <a href="https://www.tiktok.com/@mjsat00" target="_blank" class="flex items-center justify-between p-5 bg-denoBg border border-denoBorder rounded-xl no-underline text-denoText transition-colors duration-200 hover:border-gray-500 hover:bg-denoHover">
+                    <span class="font-medium text-lg">TikTok</span>
+                    <span class="text-denoMuted font-mono text-base">@mjsat00</span>
+                </a>
+                <a href="https://www.youtube.com/@MJSAT0.0" target="_blank" class="flex items-center justify-between p-5 bg-denoBg border border-denoBorder rounded-xl no-underline text-denoText transition-colors duration-200 hover:border-gray-500 hover:bg-denoHover">
+                    <span class="font-medium text-lg">YouTube</span>
+                    <span class="text-denoMuted font-mono text-base">@MJSAT0.0</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="bg-denoCard border border-denoBorder rounded-2xl p-8 shadow-xl">
+            <h2 class="text-xl mt-0 mb-5 font-semibold text-denoMuted uppercase tracking-wider">Gaming</h2>
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center justify-between p-4 px-6 bg-denoBg border border-denoBorder rounded-xl">
+                    <div class="flex flex-col gap-1.5">
+                        <span class="text-denoMuted text-sm font-medium">Roblox Username</span>
+                        <a href="https://www.roblox.com/users/4169336206/profile?friendshipSourceType=PlayerSearch" target="_blank" class="font-mono text-lg text-denoText hover:text-white hover:underline transition-colors">looooosin</a>
+                    </div>
+                    <button class="bg-transparent border border-denoBorder text-denoText px-5 py-2.5 rounded-lg text-sm font-medium cursor-pointer transition-all duration-200 hover:bg-denoHover hover:border-gray-500 copy-btn" onclick="copyText('looooosin', this)">Copy</button>
+                </div>
+                <div class="flex items-center justify-between p-4 px-6 bg-denoBg border border-denoBorder rounded-xl">
+                    <div class="flex flex-col gap-1.5">
+                        <span class="text-denoMuted text-sm font-medium">Minecraft Realm Code (Bedrock)</span>
+                        <a href="https://realms.gg/jsynswxcgarect8" target="_blank" class="font-mono text-lg text-denoText hover:text-white hover:underline transition-colors">jsynswxcgarect8</a>
+                    </div>
+                    <button class="bg-transparent border border-denoBorder text-denoText px-5 py-2.5 rounded-lg text-sm font-medium cursor-pointer transition-all duration-200 hover:bg-denoHover hover:border-gray-500 copy-btn" onclick="copyText('jsynswxcgarect8', this)">Copy</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-denoCard border border-denoBorder rounded-2xl p-8 shadow-xl">
+            <h2 class="text-xl mt-0 mb-5 font-semibold text-denoMuted uppercase tracking-wider">Other</h2>
+            <div class="flex flex-col gap-4">
+                <a href="https://discord.gg/Yebfpamu" target="_blank" class="flex items-center justify-between p-5 bg-denoBg border border-denoBorder rounded-xl no-underline text-denoText transition-colors duration-200 hover:border-gray-500 hover:bg-denoHover">
+                    <span class="font-medium text-lg">Discord Server</span>
+                    <span class="text-denoMuted font-mono text-base">discord.gg/Yebfpamu</span>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <a href="https://dgps.dev" class="fixed bottom-[30px] right-[30px] w-6 h-6 bg-purple-500/40 rotate-45 z-40 transition-colors duration-200 hover:bg-purple-500/80 outline-none" aria-label="Developer Portfolio"></a>
+
+    <script>
+        // Startup Animation Logic
+        window.addEventListener('load', () => {
+            // Wait 1.5 seconds, then trigger the fade out
+            setTimeout(() => {
+                document.getElementById('loader').classList.add('fade-out');
+            }, 1500);
+        });
+
+        // Copy Text Logic with Tailwind state changes
+        function copyText(text, btnElement) {
+            navigator.clipboard.writeText(text).then(() => {
+                const originalText = btnElement.innerText;
+                btnElement.innerText = 'Copied!';
+                
+                // Add success styling
+                btnElement.classList.remove('bg-transparent', 'border-denoBorder', 'text-denoText', 'hover:bg-denoHover', 'hover:border-gray-500');
+                btnElement.classList.add('bg-gray-200', 'text-black', 'border-gray-200');
+                
+                // Reset button after 2 seconds
+                setTimeout(() => {
+                    btnElement.innerText = originalText;
+                    btnElement.classList.remove('bg-gray-200', 'text-black', 'border-gray-200');
+                    btnElement.classList.add('bg-transparent', 'border-denoBorder', 'text-denoText', 'hover:bg-denoHover', 'hover:border-gray-500');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+                btnElement.innerText = 'Error';
+            });
+        }
+    </script>
+</body>
+</html>
